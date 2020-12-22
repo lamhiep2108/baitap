@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body><p id = result >kết quả=</p>
+<script>
+    //Viết hàm tính trung bình cộng của một mảng. mảng này người dùng nhập từ màn hình
+
+    let arr = [2,4,6,8];
+   function average(){
+       let sum = 0;
+       for (let i = 0; i < arr.length; i++) {
+           sum +=arr[i];
+       }
+       let result =sum/arr.length;
+    return result;
+   }
+   let ketqua =  average(arr);
+    document.getElementById('result').innerHTML=ketqua;
+</script>
+</body>
+</html>

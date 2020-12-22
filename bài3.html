@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Viết hàm tìm giá trị lớn nhất, giá trị nhỏ nhất của một mảng. Mảng này người dùng nhập từ màn hình
+    let arr = [1,2,3,4,5,6,7,8];
+    function min(){
+        let min=0;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i]<min){
+                min=arr[i];
+            }
+        }return min
+    }alert(min())
+    function max(){
+        let max=0;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i]>max){
+                max=arr[i];
+            }
+        }
+        return max;
+    }alert(max())
+</script>
+</body>
+</html>
